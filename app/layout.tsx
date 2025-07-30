@@ -8,6 +8,7 @@ import { Footer } from '@/components/layout/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://tygen.com'),
   title: 'TYGEN - Strategic Business Consulting',
   description: 'Transform your business through strategic consulting, process optimization, and operational excellence. Helping entrepreneurs and companies achieve sustainable growth.',
   keywords: 'business consulting, strategy development, process auditing, operations management, sales marketing',
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://tygen.com',
+    url: '/',
     title: 'TYGEN - Strategic Business Consulting',
     description: 'Transform your business through strategic consulting and operational excellence.',
     siteName: 'TYGEN',
